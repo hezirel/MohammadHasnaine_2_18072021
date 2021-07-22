@@ -1,115 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/36102fc3ba.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/36102fc3ba.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid">
     <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4">
-            <a class="navbar-brand" href="#">
-              <img src="images/logo/Reservia.svg">
-            </a>
-          </div>
-          <div class="col-lg-4">
-          </div>
-          <div class="col-lg-4">
-            <ul class="navbar-nav">
-              <li><a class="navbar-brand" href="#host">Hébergements</a></li>
-              <li><a class="navbar-brand" href="#activity">Activités</a></li>
-              <li><a class="navbar-brand" href="#subscription">S'inscrire</a></li>
-            </ul>
-          </div>
-        </div>
-      <!-- </div> -->
-    </header> 
-    <!-- <div class="container" id="c_search"> -->
       <div class="row">
-        <div class="col-lg-8">
-          <b><strong> Trouver votre hébergement pour des vacances de rêves</strong>
-          </b>
-          <p>En plein centre ville ou en pleine nature</p>    
-          <form class="searchfield">
-            <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
-            </button>
-            <input type="text" id="search" name="input" placeholder="Marseille, France">
-            <input id="search_button" type="submit" value="Rechercher">
-          </form>
+        <div class="col-lg-3">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo/Reservia.svg">
+          </a>
+        </div>
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-4">
+          <ul class="navbar-nav">
+            <li><a class="navbar-brand" href="#host">Hébergements</a></li>
+            <li><a class="navbar-brand" href="#activity">Activités</a></li>
+            <li><a class="navbar-brand" href="#subscription">S'inscrire</a></li>
+          </ul>
         </div>
       </div>
-      <div class="row" id="c_search_filters_row">
-        <div class="col-lg-2">
-          <b>Filtres</b>
-        </div>
-        <div class="col-lg-2">
-          <button type="button" class="fas fa-money-bill-wave" id="filter_econ">
-            <b>Economique</b>
+    </header>
+    <div class="row">
+      <div class="col-lg-8">
+        <b><strong> Trouver votre hébergement pour des vacances de rêves</strong>
+        </b>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form class="searchfield">
+          <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
           </button>
-        </div>
-        <div class="col-lg-2">
-          <button type="button" class="fas fa-child" id="filter_econ">
-          <b>Familiale</b> 
-        </div>
-        <div class="col-lg-2">
-        <button type="button" class="fas fa-heart" id="filter_econ">
-                  <b>Romantique</b> 
-              </div>
-              <div class="col-lg-2">
-                <button type="button" class="fas fa-dog" id="filter_econ">
-                  <b>Animaux Autorisés</b> 
-              </div>
-              <div class="col-2">
-              </div>
+          <input type="text" id="search" name="input" placeholder="Marseille, France">
+          <input id="search_button" type="submit" value="Rechercher">
+        </form>
       </div>
     </div>
-    <div class="container-fluid" id=c_hosts">
-      <div class="row"><div class="col-4 c_pane_1">><b>Hébergements à Marseille</b></div>
+    <div class="row" id="c_search_filters_row">
+      <div class="col-lg-2">
+        <b>Filtres</b>
       </div>
+      <div class="col-lg-2">
+        <button type="button" class="fas fa-money-bill-wave" id="filter_econ">
+          <b>Economique</b>
+        </button>
+      </div>
+      <div class="col-lg-2">
+        <button type="button" class="fas fa-child" id="filter_econ">
+          <b>Familiale</b>
+      </div>
+      <div class="col-lg-2">
+        <button type="button" class="fas fa-heart" id="filter_econ">
+          <b>Romantique</b>
+      </div>
+      <div class="col-lg-2">
+        <button type="button" class="fas fa-dog" id="filter_econ">
+          <b>Animaux Autorisés</b>
+      </div>
+    </div>
+    <div class="col-lg-8 c_pane_1">
+      <b>Hébergements à Marseille</b>
       <div class="row">
-        <div class="col-lg-8 c_pane_1">
-          <div class="row" id="c_host_cards">
+        <div class="col-lg-12">
+          <div class="row" id="c_host_cards_1">
             <div class="col-lg-4" id="c_host_cards_c1">
               <img class="img-responsive" src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                <div class="row">
-                  <p>Auberge La Cannebière</p>
-                </div>
+              <div class="row">
+                <p>Auberge La Cannebière</p>
+              </div>
             </div>
             <div class="col-lg-4" id="c_host_cards_c2">
               <img class="img-responsive" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                <div class="row">
-                  <p>Hotel du port</p>
-                </div>
+              <div class="row">
+                <p>Hotel du port</p>
+              </div>
             </div>
             <div class="col-lg-4" id="c_host_cards_c3">
               <img class="img-responsive" src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                  <p>Hotel du port</p>
+              <p>Hotel du port</p>
+            </div>
+          </div>
+          <div class="row" id="c_host_cards_2">
+            <div class="col-lg-4" id="c_host_cards_c4">
+              <img class="img-responsive" src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+              <div class="row">
+                <p>Auberge La Cannebière</p>
+              </div>
+            </div>
+            <div class="col-lg-4" id="c_host_cards_c5">
+              <img class="img-responsive" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
+              <div class="row">
+                <p>Hotel du port</p>
+              </div>
+            </div>
+            <div class="col-lg-4" id="c_host_cards_c6">
+              <img class="img-responsive" src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+              <p>Hotel du port</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <p>Les plus populaires</p>
-        </div>
-                  </div>
-                </div> 
-              </div>
+      </div>
     </div>
-    <section>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-    </section>
-  </body>
+    <div class="col-lg-4 c_pane_1" id="c_popular">
+      <b>Les plus populaires</b>
+      <div class="col-lg-10">
+        <div class="col-lg-3">
+          <img class="img-responsive" src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+        </div>
+        <div class="col-lg-9"><p>Le soleil de minuit</p></div>
+      </div>
+      <div class="col-lg-9">
+        <div class="col-lg-5">
+          <img class="img-responsive" src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+        </div>
+        <div class="col-lg-9"></div>
+      </div>
+            <div class="col-lg-9">
+        <div class="col-lg-5">
+          <img class="img-responsive" src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"></div>
+        <div class="col-lg-9"></div>
+      </div>
+    </div>
+  <section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </section>
+</body>
+
 </html>
