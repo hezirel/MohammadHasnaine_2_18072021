@@ -12,35 +12,39 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/36102fc3ba.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <section>
+    <header>
+   <img src="images/logo/Reservia.svg">
+   <nav>
+    <ul class="nav">
+        <li><a href="#host">Hébergements</a></li>
+        <li><a href="#activity">Activités</a></li>
+        <li><a href="">S'inscrire</a></li>
+    </ul>
+    </nav>
+    </header>  
+   <div id="bloc_search">
+    <p>Trouver votre hébergement pour des vacances de rêves
+    </p>
+  <p>En plein centre ville ou en pleine nature</p>
+    <form class="searchfield">
+            <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
+            </button>
+            <input type="text" id="search" name="input" placeholder="Marseille, France">
+            <input id="search_button" type="submit" value="Rechercher">
+  </form>
+    </div>
+  <section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </section>
- <header>
-   <img src="images/logo/Reservia.svg">
-   <nav>
-    <ul class="nav">
-        <li><a href="">Hébergements</a></li>
-        <li><a href="">Activités</a></li>
-        <li><a href="">S'inscrire</a></li>
-    </ul>
-    </nav>
-  </header>  
-  <div id="bloc_search">
-    <p>Trouver votre hébergement pour des vacances de rêves
-    </p>
-  <p>En plein centre ville ou en pleine nature</p>
-  <form id='searchfield'>
-    <i class="fas fa-map-marker-alt"></i>
-    <input type="text" id="search" name="Recherche" value="Marseille, France">
-    <input type="submit" value="Rechercher"
-  </form>
-  </div>
-  </div>
+    </section>
+    <div class="card-hostels">
+
+    </div>
   </body>
 <footer>
 <li>

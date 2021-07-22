@@ -1,8 +1,12 @@
-font-family: 'Raleway', sans-serif;
+body {
+    font-family: Raleway;
+}
 
-nav {
+.searchfield{
+    border-radius: 100px;
+}
 
-    align-self: left;
-    border-top: ;
-    border-color: aliceblue;
+#search_button{
+    background-color: #0065FC;
+    border-radius: 100px;
 }
