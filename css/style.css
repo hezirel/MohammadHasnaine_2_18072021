@@ -62,18 +62,35 @@ body {
     grid-column: 1;
 }
 
+.searchfunc{
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    outline: none;
+    border: none;
+}
+
 #search_geoloc{
-    border-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -5px;
+    border: inherit;
+    outline: inherit;
+}
+
+#search{
 }
 
 #search_button{
+    color: white;
     background-color: #0065FC;
-    border-radius: 10px;
+    border-radius: inherit;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    color: white;
+    margin-left: -5px;
+    outline: inherit;
+    border: inherit;
 }
 
 .card_4{
