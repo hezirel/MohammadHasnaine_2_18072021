@@ -33,23 +33,33 @@ body {
     float: left;
 }
 
+#navbar-sub{
+    color: #0065FC;
+}
+
 .navbar a{
     display: block;
     padding: 12px;
     text-decoration: none;
-    color: #F2F2F2;
+    color: grey;
 }
+
 .navbar a:hover{
     color: #0065FC;
     border-top: 1px solid #0065FC;
 }
 
-.navbar-brand{
-    vertical-align: center;
+#navbar_sub{
+    color: #0065FC;
+}
+
+.top_content{
+    display: grid;
+    grid-template-columns: 3;
 }
 
 .card_3{
-
+    grid-column: 1;
 }
 
 #search_geoloc{
@@ -57,12 +67,22 @@ body {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+
 #search_button{
     background-color: #0065FC;
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     color: white;
+}
+
+.card_4{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+#filter_econ{
+    background-color: #deebff;
 }
 
 .card_footer{
@@ -72,5 +92,4 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     background-color: #F2F2F2;
-    background-repeat: repeat-x;
 }

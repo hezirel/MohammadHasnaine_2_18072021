@@ -22,48 +22,38 @@
     </div>
     <div class="card_2">
       <ul class="navbar">
-        <li><a class="navbar-brand" href="#host">Hébergements</a></li>
-        <li><a class="navbar-brand" href="#activity">Activités</a></li>
-        <li><a class="navbar-brand" href="#subscription">S'inscrire</a></li>
+        <li><a class="navbar-menu" href="#host">Hébergements</a></li>
+        <li><a class="navbar-menu" href="#activity">Activités</a></li>
+        <li><a id="navbar-sub" href="#subscription"><b>S'inscrire</b></a></li>
       </ul>
     </div>
   </header>
   <div class="top_content">
     <div class="card_3">
-      <b><strong> Trouver votre hébergement pour des vacances de rêves</strong>
+      <b>Trouver votre hébergement pour des vacances de rêves
       </b>
       <p>En plein centre ville ou en pleine nature</p>
-      <label class="searchfield">
-        <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
-        </button>
-        <input type="text" id="search" name="input" placeholder="Marseille, France">
-        <input id="search_button" type="submit" value="Rechercher">
-      </label>
+      <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
+      </button>
+      <input type="text" id="search" name="input" placeholder="Marseille, France">
+      <input id="search_button" type="submit" value="Rechercher">
     </div>
   </div>
-  <div class="card_4" id="c_search_filters_row">
-    <div class="search">
-      <b>Filtres</b>
-      <div class="col-lg-2">
-        <button type="button" class="fas fa-money-bill-wave" id="filter_econ">
-          <b>Economique</b>
-        </button>
-      </div>
-      <div class="col-lg-2">
-        <button type="button" class="fas fa-child" id="filter_econ">
-          <b>Familiale</b>
-      </div>
-      <div class="col-lg-2">
-        <button type="button" class="fas fa-heart" id="filter_econ">
-          <b>Romantique</b>
-      </div>
-      <div class="col-lg-2">
-        <button type="button" class="fas fa-dog" id="filter_econ">
-          <b>Animaux Autorisés</b>
-      </div>
-    </div>
+  <div class="card_4">
+    <b>Filtres</b>
+      <button type="button" class="fas fa-child" id="filter_econ">
+        <b>Familiale</b>
+      </button>
+      <button type="button" class="fas fa-money-bill-wave" id="filter_econ">
+        <b>Economique</b>
+      </button>
+      <button type="button" class="fas fa-heart" id="filter_econ">
+        <b>Romantique</b>
+      </button>
+      <button type="button" class="fas fa-dog" id="filter_econ">
+        <b>Animaux Autorisés</b>
+      </button>
   </div>
-
   <!--     <div class="col-lg-9 c_pane_1">
       <b>Hébergements à Marseille</b>
       <div class="row">
@@ -117,10 +107,10 @@
         </div>
       </div>
     </div>
- -->
-  </div>
+  </div>-->
   <footer class="card_footer">
-    <b>A propos</b>
+    <!-- add 3 cards for each footer subcategories and define columns
+    for each-->
   </footer>
 </body>
 
