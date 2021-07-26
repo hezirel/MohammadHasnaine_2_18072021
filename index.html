@@ -15,38 +15,36 @@
 
 <body>
 
-  <div class="wrapper">
-    <header class="head">
-      <div class="card_1">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo/Reservia.svg">
-        </a>
-      </div>
-      <div class="card_2">
-        <ul class="navbar">
-          <li><a class="navbar-brand" href="#host">Hébergements</a></li>
-          <li><a class="navbar-brand" href="#activity">Activités</a></li>
-          <li><a class="navbar-brand" href="#subscription">S'inscrire</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="top_content">
-      <div card_3>
-        <b><strong> Trouver votre hébergement pour des vacances de rêves</strong>
-        </b>
-        <p>En plein centre ville ou en pleine nature</p>
-        <form class="searchfield">
-          <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
+  <header class="head">
+    <div class="card_1">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/Reservia.svg">
+      </a>
+    </div>
+    <div class="card_2">
+      <ul class="navbar">
+        <li><a class="navbar-brand" href="#host">Hébergements</a></li>
+        <li><a class="navbar-brand" href="#activity">Activités</a></li>
+        <li><a class="navbar-brand" href="#subscription">S'inscrire</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="top_content">
+    <div class="card_3">
+      <b><strong> Trouver votre hébergement pour des vacances de rêves</strong>
+      </b>
+      <p>En plein centre ville ou en pleine nature</p>
+      <label class="searchfield">
+        <button type="submit" class="fas fa-map-marker-alt" id="search_geoloc">
           </button>
           <input type="text" id="search" name="input" placeholder="Marseille, France">
           <input id="search_button" type="submit" value="Rechercher">
-        </form>
-      </div>
+      </label>
     </div>
-    <div class="row" id="c_search_filters_row">
-      <div class="col-lg-2">
-        <b>Filtres</b>
-      </div>
+  </div>
+  <div class="card_4" id="c_search_filters_row">
+    <div class="search">
+      <b>Filtres</b>
       <div class="col-lg-2">
         <button type="button" class="fas fa-money-bill-wave" id="filter_econ">
           <b>Economique</b>
@@ -65,7 +63,9 @@
           <b>Animaux Autorisés</b>
       </div>
     </div>
-<!--     <div class="col-lg-9 c_pane_1">
+  </div>
+
+  <!--     <div class="col-lg-9 c_pane_1">
       <b>Hébergements à Marseille</b>
       <div class="row">
         <div class="col-lg-12">
@@ -118,7 +118,8 @@
         </div>
       </div>
     </div>
- -->  </div>
+ -->
+  </div>
 </body>
 
 </html>

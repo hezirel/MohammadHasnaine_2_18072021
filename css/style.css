@@ -8,11 +8,12 @@ body {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
-.cards {
-    max-width: 1200px;
-    grid-gap: 1rem;
-    margin: 0 auto;
-    grid-gap: 1rem;
+
+.search{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .card_1{
@@ -21,9 +22,9 @@ body {
 
 .card_2{
     grid-column: 3/3;
-}
-.card_3{
-    grid-column: ;
+    display: inline;
+    list-style-type: none;
+    float: left;
 }
 
 .navbar li{
@@ -36,8 +37,30 @@ body {
     display: block;
     padding: 12px;
     text-decoration: none;
+    color: grey;
+}
+.navbar a:hover{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
 }
 
 .navbar-brand{
     vertical-align: center;
+}
+
+.card_3{
+
+}
+
+#search_geoloc{
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#search_button{
+    background-color: #0065FC;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: white;
 }
