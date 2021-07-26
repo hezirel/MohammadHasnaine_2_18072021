@@ -64,22 +64,36 @@ body {
 
 .searchfunc{
     border-radius: 5px;
-    margin-left: 0;
-    margin-right: 0;
     outline: none;
     border: none;
+    line-height: 35px;
+    vertical-align: middle;
+    display: inline-flex;
 }
 
 #search_geoloc{
+    width: 30px;
     border-radius: inherit;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    margin-right: -5px;
     border: inherit;
     outline: inherit;
+    line-height: inherit;
 }
 
 #search{
+    height: inherit;
+    border: inherit;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 10px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: black;
 }
 
 #search_button{
@@ -88,9 +102,9 @@ body {
     border-radius: inherit;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    margin-left: -5px;
     outline: inherit;
     border: inherit;
+    line-height: inherit;
 }
 
 .card_4{
