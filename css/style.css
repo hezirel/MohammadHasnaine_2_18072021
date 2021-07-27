@@ -2,64 +2,55 @@ body {
     font-family: Raleway;
 }
 
-.head{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.search{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
 .card_1{
-    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.sub{
+    color: #0065FC;
+    grid-column-start: 2;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 900;
+    padding-top: 4%;
 }
 
 .card_2{
-    grid-column: 3/3;
-    display: inline;
-    list-style-type: none;
-    float: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
 }
-
-.navbar li{
-    display: inline;
-    list-style-type: none;
-    float: left;
-}
-
-#navbar-sub{
-    color: #0065FC;
-}
-
-.navbar a{
-    display: block;
-    padding: 12px;
+.card_2 a{
     text-decoration: none;
     color: grey;
+    display: inline-flexbox;
+    border-bottom: 3px solid grey;
 }
 
-.navbar a:hover{
+.card_2 a:hover{
     color: #0065FC;
-    border-top: 1px solid #0065FC;
-}
-
-#navbar_sub{
-    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+    /*Add media query here for decoration type*/
 }
 
 .top_content{
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .card_3{
     grid-column: 1;
+}
+
+.search{
+    display: grid;
+    grid-column: 3;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .searchfunc{
@@ -109,7 +100,8 @@ body {
 
 .card_4{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 #filter_econ{
