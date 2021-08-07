@@ -9,107 +9,110 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/2f777012c0.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+
   <body>
     <header>
-        <nav>
-          <section class="top">
-            <img id="main_logo" src="img/logo/Reservia.svg" alt="logo">
-            <section class="sign_up">
-              <a href="#" class="link">S'inscrire</a>
-            </section>
-            <section class="onglets">
-              <a href="#hebergements" class="link onglet">Hébergements</a>
-              <a href="#activites" class="link onglet">Activités</a>
-            </section>
+      <nav>
+        <section class="top">
+          <img id="main_logo" src="img/logo/Reservia.svg" alt="logo">
+          <link class="sign_up">
+            <a href="#" class="link">S'inscrire</a>
+          </link>
+          <section class="onglets">
+            <a href="#hebergements" class="link onglet">Hébergements</a>
+            <a href="#activites" class="link onglet">Activités</a>
           </section>
-        </nav>
-      <div class="main">
-        <header>
-          <article class="title">
-            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-            <p>En plein centre ville ou en pleine nature</p>
-          </article>
-          <div class="searchbar">
+        </section>
+      </nav>
+      <article class="intro">
+        <section class="title">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <aside>En plein centre ville ou en pleine nature</aside>
+        </section>
+        <section class="searchbar">
+          <a href="">
+            <section class="localisation">
+              <i class="fas fa-map-marker-alt"></i>
+            </section>
+          </a>
+          <input type="text" placeholder="Marseille, France">
+          <a href="">
+            <div class="search_button">
+              <i class="fas fa-search"></i>
+              <b>Rechercher</b>
+            </div>
+          </a>
+        </section>
+        <section class="filters_block">
+          <h4>Filtres</h4>
+          <section class="filters">
             <a href="">
-              <div class="localisation">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
+              <section class="filter">
+                <span class="filter_icon">
+                  <i class="fas fa-money-bill-wave"></i>
+                </span>
+                <span class="filter_label">
+                  Économique
+                </span>
+              </section>
             </a>
-            <input type="text" placeholder="Marseille, France">
             <a href="">
-              <div class="search_button">
-                <i class="fas fa-search"></i>
-                <b>Rechercher</b>
-              </div>
-            </a>
-          </div>
-          <div class="filters_block">
-            <h4>Filtres</h4>
-            <div class="filters">
-              <a href="">
-                <span class="filter">
-                  <div class="filter_icon">
-                    <i class="fas fa-money-bill-wave"></i>
-                  </div>
-                  <span class="filter_label">
-                    Économique
+              <span class="filter">
+                <span class="filter_icon">
+                  <i class="fas fa-child"></i>
+                </span>
+                <span class="filter_label">
+                  Familial
                 </span>
               </span>
-              </a>
-              <a href="">
-                <span class="filter">
-                  <span class="filter_icon">
-                    <i class="fas fa-child"></i>
-                  </span>
-                  <span class="filter_label">
-                    Familial
-                  </span>
+            </a>
+            <a href="">
+              <span class="filter">
+                <span class="filter_icon">
+                  <i class="fas fa-heart"></i>
                 </span>
-              </a>
-              <a href="">
-                <span class="filter">
-                  <span class="filter_icon">
-                    <i class="fas fa-heart"></i>
-                  </span>
-                  <span class="filter_label">
-                    Romantique
-                  </span>
+                <span class="filter_label">
+                  Romantique
                 </span>
-              </a>
-              <a href="">
-                <div class="filter">
-                  <div class="filter_icon">
-                    <i class="fas fa-dog"></i>
-                  </div>
-                  <div class="filter_label">
-                    Animaux autorisés
-                  </div>
+              </span>
+            </a>
+            <a href="">
+              <div class="filter">
+                <div class="filter_icon">
+                  <i class="fas fa-dog"></i>
                 </div>
-              </a>
-            </div>
+                <div class="filter_label">
+                  Animaux autorisés
+                </div>
+              </div>
+            </a>
+          </section>
+        </section>
+        <article class="info">
+          <i class="fas fa-info info_logo">
+          </i>
+          <div class="info_p">
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
-          <div class="info">
-            <div class="info_logo">
-              <i class="fas fa-info"></i>
-            </div>
-            <div class="info_p">
-              <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-          </div>
-      </div>
+        </article>
+      </article>
     </header>
-    <div class="body">
+    <main>
       <span class="block1">
         <section id="popular" class="col">
-          <header>
-            <h3>Les plus populaires</h3>
+          <span id="popular_label">
+            <h4>Les plus populaires</h4>
             <a href=""><i class="fas fa-chart-line"></i></a>
-          </header>
+          </span>
           <div class="content">
             <a href="">
               <div class="card type1 ">
@@ -135,7 +138,8 @@
             <a href="">
               <div class="card type1 ">
                 <div class="card_img">
-                  <img id="img2" src="img/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hébergement_2">
+                  <img id="img2" src="img/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Hébergement_2">
                 </div>
                 <div class="card_info">
                   <div class="card_description">
@@ -153,7 +157,7 @@
               </div>
             </a>
             <a href="">
-              <div class="card type1 ">
+              <div class="card type1">
                 <div class="card_img">
                   <img id="img3" src="img/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                     alt="Hébergement_3">
@@ -177,12 +181,13 @@
           <footer class="popular_footer"></footer>
         </section>
         <section id="hebergements" class="col">
-            <h3>Hébergements à Marseille</h3>
+          <h4>Hébergements à Marseille</h4>
           <div class="content">
             <a href="">
               <div id="card4" class="card type2 ">
                 <div class="card_img">
-                  <img id="img4" src="img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hébergement_4">
+                  <img id="img4" src="img/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="Hébergement_4">
                 </div>
                 <div class="card_info">
                   <div class="card_title">
@@ -204,7 +209,8 @@
             <a href="">
               <div id="card5" class="card type2 ">
                 <div class="card_img">
-                  <img id="img5" src="img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hébergement_5">
+                  <img id="img5" src="img/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="Hébergement_5">
                 </div>
                 <div class="card_info">
                   <div class="card_title">
@@ -248,7 +254,8 @@
             <a href="">
               <div id="card7" class="card type2 ">
                 <div class="card_img">
-                  <img id="img7" src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hébergement_7">
+                  <img id="img7" src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="Hébergement_7">
                 </div>
                 <div class="card_info">
                   <div class="card_title">
@@ -405,7 +412,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <footer id=main_footer>
       <div class="footer_content">
         <div class="footer_title">
