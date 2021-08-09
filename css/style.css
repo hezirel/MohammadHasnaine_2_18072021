@@ -184,8 +184,8 @@ input {
 
 .info_logo {
     color: #0065FC;
-    font-size: smaller;
-    padding: 10px;
+    font-size: 10px;
+    padding: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +280,7 @@ h5 {
 
 .type2,
 .type3 {
-    height: auto;
+    height: fit-content;
     width: 99vw;
     padding: 1%;
 }
@@ -301,7 +301,7 @@ h5 {
 }
 
 .type2 .card_info {
-    margin-top: -3px;
+    height: fit-content;
     padding-left: 10px;
     height: fit-content;
 }
@@ -375,7 +375,7 @@ section .footer {
 
 #main_footer {
     background-color: #F2F2F2;
-    padding: 20px;
+    width: 100vw;
 }
 
 #main_footer h5 {
@@ -496,6 +496,7 @@ li {
         margin-left: 20px;
         border-radius: 10px;
         height: auto;
+        width: 30vw;
     }
 
     .block1 #hebergements {
@@ -717,8 +718,7 @@ li {
         width: 33%;
     }
 }
-*/
-/*
+
 @media screen and (min-width:769px) {
     input {
         width: 15vw;
