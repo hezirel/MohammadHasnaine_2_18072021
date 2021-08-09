@@ -1,9 +1,4 @@
-* {
-    font-family: "Raleway";
-}
-
 nav {
-    padding: 5px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -14,15 +9,12 @@ a {
 }
 
 .top {
-    display: grid;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    padding: 5px;
 }
 
 #main_logo {
-    position: absolute;
     top: 20px;
 }
 
@@ -61,11 +53,13 @@ a {
 .title {
     padding: 0px;
     padding-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .title aside {
-    font-weight: lighter;
+    font-weight: 200;
+    font-size:small;
 }
 
 .searchbar {
@@ -206,7 +200,6 @@ input {
 
 #popular {
     background-color: #F2F2F2;
-    width: 100vw;
     /* Need link to @media query for larger
     screen*/
 }
@@ -230,21 +223,19 @@ input {
     border-radius: 10px;
     align-items: center;
     background-color: cyan;
-    width: auto;
-    padding: 1%;
+    width: 40vw;
+    padding: auto;
 }
-
-.type1 .card_img img{
-    width: 40%;
+.type1 .card_img {
+    overflow:hidden;
+}
+.type1 .card_img img {
+    max-width:150%;
+    object-fit:cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.type1 .card_img img {
-    height: auto;
-    width: 40vw;
-    padding-left: 1vw;
-}
 
 .type1 .card_info {
     width: 60%;
@@ -254,18 +245,12 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 5px;
 }
 
 .card .card_info p {
     font-size: 11px;
 }
 
-h5 {
-    margin-top: 10px;
-    margin-bottom: -5px;
-    font-size: 13px;
-}
 
 .card .card_info .card_rating i {
     margin-top: 5px;
@@ -397,8 +382,8 @@ li {
     margin-bottom: 5px;
 }
 
-/*/*  */
 @media screen and (min-width:600px) {
+
     .onglets {
         display: flex;
         justify-content: flex-end;
@@ -408,21 +393,14 @@ li {
     }
 
     .top {
-        height: 10vh;
+        height: 100px;
         align-items: center;
-        padding-bottom: 1%;
     }
 
     .onglet:hover {
         border-top: 2px #0065FC solid;
     }
 
-    .onglets {
-        width: 90vw;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
 
     .onglets .onglet {
         width: fit-content;
@@ -435,11 +413,11 @@ li {
 
     .sign_up {
         order: 2;
-        margin-right: auto;
+        margin-right: 20px;
     }
 
     .searchbar {
-        width: 40vw;
+        width: 50vw;
     }
 
     .search_button {
@@ -501,9 +479,9 @@ li {
 
     .block1 #hebergements {
         flex: 3;
-
         background-color: #F2F2F2;
         border-radius: 10px;
+        padding: 5px;
     }
 
     #hebergements .content {
@@ -561,22 +539,22 @@ li {
     #popular .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 90%;
+        justify-content: space-evenly;
+        padding: 5px;
+        height: auto;
     }
 
     .type1 {
-        width: 15rem;
-        height: 7rem;
-        margin-bottom: 0;
+        width: fit-content;
+        height: fit-content;
     }
 
     .type1 .card_info {
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 5px;
+        
     }
 
     .type1 .card_rating {
@@ -586,6 +564,11 @@ li {
     .type1 .card_img {
         width: 110px;
         height: 100%;
+    }
+    
+    .type1 h5 {
+        padding: 0;
+        margin: 0;
     }
 
     .type1 .card_img img {
