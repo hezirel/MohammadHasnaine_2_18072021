@@ -291,13 +291,14 @@ input {
 }
 
 .type2 .card_info {
-    height: fit-content;
     padding-bottom: 5px;
     padding-left: 10px;
 }
 
 .type2 .card_info h5 {
-    margin-bottom: -8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .type2 .card_info .card_rating {
@@ -566,8 +567,8 @@ section .footer {
     }
 
     .type1 .card_img {
-        width: 110px;
         height: 100%;
+        width: -webkit-fill-available;
     }
     
     .type1 h5 {
@@ -594,8 +595,13 @@ section .footer {
     }
 
     .type3 {
-        margin: 0;
         width: auto;
+    }
+
+    .type3 h5 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
     }
 
     #port {
