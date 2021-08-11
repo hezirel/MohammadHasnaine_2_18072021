@@ -222,6 +222,8 @@ input {
     border-radius: 25px;
     align-items: center;
     background-color: white;
+    margin: 0.5rem;
+    border-radius: 25px;
 }
 .type1 .card_img {
     object-fit: contain;
@@ -230,16 +232,18 @@ input {
 }
 
 .type1 .card_img img {
-    max-width: 40vw;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     vertical-align: middle;
     margin-left: 1vw;
+    max-width: 40vw;
+    max-height: 30vh;
+    object-fit: scale-down;
 }
 
 
 .type1 .card_info {
-    width: 50%;
+    width: 60%;
     display: flex;
     margin-left: 5vw;
     flex-wrap: wrap;
