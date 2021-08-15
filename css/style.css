@@ -195,10 +195,6 @@ input {
     margin-left: 10px;
 }
 
-.block1 {
-
-}
-
 #popular {
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -206,15 +202,12 @@ input {
 }
 
 #popular_label {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 5vw;
+    margin-top: -15px;
     font-family: 'Raleway';
-    padding: none;
-}
-
-.content {
+    padding: 10px;
 }
 
 .card {
@@ -226,23 +219,25 @@ input {
 
 .type1 {
     display: flex;
-    border-radius: 25px;
-    align-items: center;
     background-color: white;
     border-radius: 25px;
 }
 .type1 .card_img {
-    align-items: center;
-    border-radius: 25px;
+    height: 20vh;
+    width: 40%;
+    overflow: hidden;
+    object-fit: contain;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px
 }
 
 .type1 .card_img img {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     vertical-align: middle;
-    width: 40vw;
+    width: 150%;
     object-fit: cover;
-    padding: 5px;
+    position: relative;
 }
 
 
@@ -251,8 +246,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .type1 .card_info p {
@@ -271,6 +265,7 @@ input {
 #main_footer {
     background-color: #F2F2F2;
     margin: 0;
+    font-family: 'Raleway';
 }
 
 #main_footer h5 {
@@ -291,15 +286,13 @@ input {
     color: #D9D9D9 !important;
 }
 
-.type2,
-.type3 {
+.type2 {
     height: fit-content;
     width: 99vw;
     border-radius: 7px;
 }
 
 .type2 .card_img {
-    height: 75px;
     width: 100%;
     overflow: hidden;
     border-top-left-radius: 7px;
@@ -307,10 +300,9 @@ input {
 }
 
 .type2 .card_img img {
-    height: auto;
+    max-height: 20vh;
     width: 100%;
-    position: relative;
-    bottom: 60px;
+    object-fit: cover;
 }
 
 .type2 .card_info {
@@ -382,7 +374,7 @@ section .footer {
 #img_nd {
     bottom: 10px;
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:426px) {
 
     .onglets {
         display: flex;
@@ -473,6 +465,7 @@ section .footer {
         margin-left: 2vw;
         border-radius: 10px;
         max-width: 30vw;
+        max-height: fit-content;
     }
 
     .block1 #hebergements {
@@ -769,7 +762,7 @@ section .footer {
     #popular .content {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 20px;
+        gap: 20px;
         height: fit-content;
     }
 
