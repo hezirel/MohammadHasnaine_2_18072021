@@ -60,7 +60,7 @@ a {
 
 .title aside {
     font-weight: 200;
-    font-size:small;
+    font-size: small;
 }
 
 .searchbar {
@@ -201,7 +201,7 @@ input {
     padding: 0.5rem;
 }
 
-#popular_label {
+.label {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,6 +222,7 @@ input {
     background-color: white;
     border-radius: 25px;
 }
+
 .type1 .card_img {
     height: 20vh;
     width: 40%;
@@ -282,76 +283,55 @@ input {
     margin-bottom: 10px;
     font-size: 13px;
 }
+
 .disabled {
     color: #D9D9D9 !important;
 }
 
 .type2 {
-    height: fit-content;
-    width: 99vw;
-    border-radius: 7px;
+    height: 40vh;
+    border-radius: 25px;
 }
 
 .type2 .card_img {
     width: 100%;
     overflow: hidden;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .type2 .card_img img {
-    max-height: 20vh;
-    width: 100%;
+    height: 20vh;
+    width: -webkit-fill-available;
     object-fit: cover;
 }
 
 .type2 .card_info {
-    padding-bottom: 5px;
     padding-left: 10px;
 }
 
 .type2 .card_info h5 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin: none;
+    border: none;
+    padding: none;
 }
 
 .type2 .card_info .card_rating {
     margin-top: -12px;
 }
 
-#img7 {
-    width: 100%;
-    height: 220px;
-    bottom: 70px;
-}
-
-#img9 {
-    width: 100%;
-    height: 350px;
-    bottom: 135px;
-    left: 0px;
-}
-
-section .footer {
-    margin-top: 25px;
-}
-
-.footer h5 {
-    font-size: 15px;
-}
-
 .type3 {
-    padding: 0;
-    margin-bottom: 20px;
+    border-radius: 25px;
 }
 
 .type3 .card_img {
-    height: 90px;
+    max-height: 20vh;
     width: 100%;
     overflow: hidden;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .type3 .card_img img {
@@ -367,13 +347,6 @@ section .footer {
     align-items: center;
 }
 
-#img_fort {
-    bottom: 150px;
-}
-
-#img_nd {
-    bottom: 10px;
-}
 @media screen and (min-width:426px) {
 
     .onglets {
@@ -426,11 +399,6 @@ section .footer {
         display: block;
     }
 
-    .main header .title {
-        margin-bottom: 0;
-        ;
-    }
-
     .filters_block {
         display: flex;
         align-items: baseline;
@@ -442,10 +410,6 @@ section .footer {
         margin-left: 10px;
     }
 
-    .filter_icon {
-        top: -2px;
-    }
-
     .info {
         justify-content: left;
     }
@@ -455,7 +419,7 @@ section .footer {
         width: 97vw;
     }
 
-    .content{
+    .content {
         padding: 15px;
     }
 
@@ -549,7 +513,7 @@ section .footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
     }
 
     .type1 .card_rating {
@@ -560,7 +524,7 @@ section .footer {
         height: 100%;
         width: -webkit-fill-available;
     }
-    
+
     .type1 h5 {
         padding: 0;
         margin: 0;
@@ -581,11 +545,7 @@ section .footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         width: fit-content;
-        grid-gap: 20px;
-    }
-
-    .type3 {
-        width: auto;
+        gap: 20px;
     }
 
     .type3 h5 {
@@ -689,10 +649,6 @@ section .footer {
         bottom: 10px;
     }
 
-    #main_footer {
-        margin-top: 20px;
-    }
-
     footer {
         display: flex;
     }
@@ -703,15 +659,6 @@ section .footer {
 }
 
 @media screen and (min-width:769px) {
-
-    .info {
-        margin-bottom: 0;
-    }
-
-
-    #hebergements header {
-        margin-bottom: -20px;
-    }
 
     #hebergements .content {
         display: flex;
@@ -725,29 +672,10 @@ section .footer {
     #hebergements .card {
         width: 100%;
         height: fit-content;
-        margin-bottom: 0;
     }
 
     #hebergements .card_img {
-        height: 6rem;
-    }
-
-    #hebergements .card_img img {
-        bottom: 20px;
-    }
-
-    #img7 {
-        width: 100%;
-        top: -70px;
-    }
-
-    #img8 {
-        width: 110%;
-        bottom: 100px;
-    }
-
-    #img9 {
-        top: -130px;
+        height: 7rem;
     }
 
     #hebergements .card_rating {
@@ -767,8 +695,7 @@ section .footer {
     }
 
     .type1 {
-        height: 7rem;
-        margin-bottom: 0;
+        max-height: 20vh;
     }
 
     .type1 .card_img {
@@ -778,43 +705,35 @@ section .footer {
 
     #port {
         grid-area: el10;
-        height: 410px;
-    }
-
-    #port .card_img {
-        height: 370px;
+        height: 40vh;
     }
 
     #port .card_img img {
         height: auto;
-        bottom: 0px;
+        bottom: 100px;
         width: 250%;
         right: 220px;
     }
 
-    #fort {
+    #port {
         grid-area: el11;
-        height: 210px;
-        margin-bottom: 20px;
     }
 
-    #fort .card_img {
-        height: 170px;
+    #port .card_img {
+        max-height: fit-content;
+        object-fit: contain;
+    }
+
+    #port .card_img img {
+        vertical-align: middle;
+        object-fit: cover;
     }
 
     #fort .card_img img {
-        height: auto;
-        width: 100%;
-        bottom: 100px;
     }
 
     #ile {
         grid-area: el12;
-        height: 180px;
-    }
-
-    #ile .card_img {
-        height: 140px;
     }
 
     #ile .card_img img {
@@ -825,34 +744,17 @@ section .footer {
 
     #parc {
         grid-area: el13;
-        height: 410px;
+        height: 40vh;
     }
 
     #parc .card_img {
-        height: 370px;
+        max-height: fit-content;
+        object-fit: contain;
     }
 
     #parc .card_img img {
-        width: 260%;
-        height: auto;
-        bottom: 100px;
-        right: 250px;
-    }
-
-    #nd {
-        grid-area: el14;
-        height: 210px;
-        margin-bottom: 20px;
-    }
-
-    #nd .card_img {
-        height: 170px;
-    }
-
-    #nd .card_img img {
-        width: 150%;
-        height: auto;
-        right: 50px;
+        vertical-align: middle;
+        object-fit: cover;
     }
 
     #longchamp {
