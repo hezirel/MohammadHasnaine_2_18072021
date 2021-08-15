@@ -417,6 +417,7 @@ input {
     .block1 {
         display: flex;
         width: 97vw;
+        font-family: 'Raleway';
     }
 
     .content {
@@ -439,10 +440,6 @@ input {
         height: 100%;
     }
 
-    #hebergements p {
-        font-family: 'Raleway';
-    }
-
     #hebergements .content {
         display: grid;
         height: fit-content;
@@ -453,7 +450,7 @@ input {
             "el3 el4"
             "el5 el6"
         ;
-        grid-gap: 20px;
+        gap: 20px;
     }
 
     #card4 {
@@ -487,8 +484,15 @@ input {
     .type2 {
         width: auto;
         height: fit-content;
-        margin-bottom: 0;
+        padding-top: none;
+        margin: none;
     }
+
+.type2 .card_info {
+    padding: 10px;
+    padding-top: none;
+    margin-top: -20px;
+}
 
     .footer {
         position: relative;
@@ -683,7 +687,8 @@ input {
     }
 
     #hebergement_footer h5 {
-        margin-top: 40px;
+        padding: 10px;
+        padding-left: 20px;
     }
 
 
