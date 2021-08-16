@@ -308,18 +308,13 @@ input {
 
 .type2 .card_info {
     padding-left: 10px;
+    font-size: 14px
 }
 
 .type2 .card_info h5 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: none;
-    border: none;
-    padding: none;
-}
-
-.type2 .card_info .card_rating {
-    margin-top: -12px;
+    font-size: 16px;
+    margin-bottom: -1vh;
+    margin-top: 2vh;
 }
 
 .type3 {
@@ -428,15 +423,16 @@ input {
         flex: none;
         order: 2;
         margin-left: 2vw;
-        border-radius: 10px;
+        border-radius: 25px;
         max-width: 30vw;
-        max-height: fit-content;
+        height: initial;
+        gap: 20px;
     }
 
     .block1 #hebergements {
         flex: 3;
         background-color: #F2F2F2;
-        border-radius: 10px;
+        border-radius: 25px;
         height: 100%;
     }
 
@@ -488,11 +484,11 @@ input {
         margin: none;
     }
 
-.type2 .card_info {
-    padding: 10px;
-    padding-top: none;
-    margin-top: -20px;
-}
+    .type2 .card_info {
+        padding: 10px;
+        padding-top: none;
+        margin-top: -20px;
+    }
 
     .footer {
         position: relative;
@@ -708,20 +704,12 @@ input {
         height: 100%;
     }
 
+    .type3 {
+        height: -webkit-fill-available;
+    }
+
     #port {
         grid-area: el10;
-        height: 40vh;
-    }
-
-    #port .card_img img {
-        height: auto;
-        bottom: 100px;
-        width: 250%;
-        right: 220px;
-    }
-
-    #port {
-        grid-area: el11;
     }
 
     #port .card_img {
@@ -732,9 +720,19 @@ input {
     #port .card_img img {
         vertical-align: middle;
         object-fit: cover;
+        height: auto;
+        bottom: 100px;
+        width: 250%;
+        right: 220px;
     }
 
     #fort .card_img img {
+        vertical-align: middle;
+        object-fit: cover;
+        height: auto;
+        bottom: 500px;
+        width: 250%;
+        right: 220px;
     }
 
     #ile {
@@ -749,7 +747,6 @@ input {
 
     #parc {
         grid-area: el13;
-        height: 40vh;
     }
 
     #parc .card_img {
@@ -760,15 +757,14 @@ input {
     #parc .card_img img {
         vertical-align: middle;
         object-fit: cover;
+        height: auto;
+        bottom: 100px;
+        width: 250%;
+        right: 220px;
     }
 
     #longchamp {
         grid-area: el15;
-        height: 180px;
-    }
-
-    #longchamp .card_img {
-        height: 140px;
     }
 
     #longchamp .card_img img {
