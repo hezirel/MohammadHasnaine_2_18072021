@@ -3,7 +3,6 @@ nav {
     padding-top: 0;
     padding-bottom: 0;
     font-family: 'Raleway';
-    font-size: 14px;
 }
 
 a {
@@ -16,6 +15,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 12px;
 }
 
 
@@ -214,7 +214,7 @@ input {
     margin-top: -15px;
     margin-bottom: -15px;
     font-family: 'Raleway';
-    padding: 10px;
+    padding: 1rem;
 }
 
 .card {
@@ -254,15 +254,19 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 10px;
+    padding: 10px;
+}
+
+.type1 .card_info h4 {
+    font-size: 16px;
 }
 
 .type1 .card_info p {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .card_rating i {
-    font-size: 9px;
+    font-size: 12px;
     color: #0065FC
 }
 
@@ -296,8 +300,8 @@ input {
 }
 
 .type2 {
-    height: 40vh;
     border-radius: 25px;
+    padding-bottom: 1rem;
 }
 
 .type2 .card_img {
@@ -318,7 +322,7 @@ input {
     font-size: 14px
 }
 
-.type2 .card_info h5 {
+.type2 .card_info h4 {
     font-size: 16px;
     margin-bottom: -1vh;
     margin-top: 2vh;
@@ -445,6 +449,7 @@ input {
     #hebergements .content {
         display: grid;
         height: fit-content;
+        width: -webkit-fill-available;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 1fr 1fr 1fr;
         grid-template-areas:
@@ -452,7 +457,7 @@ input {
             "el3 el4"
             "el5 el6"
         ;
-        gap: 20px;
+        gap: 1.2rem;
     }
 
     #card4 {
@@ -483,17 +488,10 @@ input {
         bottom: 30px;
     }
 
-    .type2 {
-        width: auto;
-        height: fit-content;
-        padding-top: none;
-        margin: none;
-    }
-
     .type2 .card_info {
-        padding: 10px;
-        padding-top: none;
-        margin-top: -20px;
+        padding: 5px;
+        margin-top: -10px;
+        padding-bottom: none;
     }
 
     .footer {
@@ -531,7 +529,7 @@ input {
         width: -webkit-fill-available;
     }
 
-    .type1 h5 {
+    .type1 h4 {
         padding: 0;
         margin: 0;
     }
@@ -554,7 +552,7 @@ input {
         gap: 20px;
     }
 
-    .type3 h5 {
+    .type3 h4 {
         display: flex;
         flex-wrap: wrap;
         margin-top: 10px;
@@ -672,7 +670,7 @@ input {
     }
 
     #hebergements .content>* {
-        flex: 0 1 31%;
+        flex: 1 1 31%;
     }
 
     #hebergements .card {
@@ -684,11 +682,7 @@ input {
         height: 7rem;
     }
 
-    #hebergements .card_rating {
-        margin-bottom: 5px;
-    }
-
-    #hebergement_footer h5 {
+    #hebergement_footer p {
         padding: 10px;
         padding-left: 20px;
     }
@@ -712,6 +706,7 @@ input {
 
     .type3 {
         height: -webkit-fill-available;
+        font-size:15px;
     }
 
     #port {
