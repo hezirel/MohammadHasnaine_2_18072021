@@ -18,11 +18,11 @@ a {
     font-size: 12px;
 }
 
-
 .sign_up a {
     color: #0065FC;
     font-weight: bold;
     justify-content: center;
+    align-self: right;
 }
 
 .onglets {
@@ -38,17 +38,15 @@ a {
     width: 100%;
     justify-content: center;
     border-bottom: lightgray 1px solid;
+    padding: 1rem;
     text-align: center;
-}
-
-.onglet h2{
-    text-decoration: none;
-    font-weight: lighter;
+    font-size: 12px;
 }
 
 .onglets a:hover {
     text-decoration: none;
     color: #0065FC;
+    font-weight: lighter;
     border-bottom: #0065FC 3px solid;
 }
 
@@ -75,7 +73,6 @@ a {
     border: #f2f2f2 1px solid;
     border-radius: 10px;
     width: auto;
-    padding: 0;
 }
 
 input {
@@ -94,10 +91,10 @@ input {
 }
 
 .localisation {
-    padding: 15px;
     background-color: #F2F2F2;
     border-bottom-left-radius: 9px;
     border-top-left-radius: 9px;
+    padding: 22px;
 }
 
 .localisation:hover {
@@ -107,7 +104,6 @@ input {
 
 .search_button {
     background-color: #0065FC;
-    padding: 15px;
     border-radius: 9px;
 }
 
@@ -120,7 +116,7 @@ input {
     color: white;
 }
 
-.search_button b {
+.search_button p {
     color: white;
     display: none;
 }
@@ -201,6 +197,10 @@ input {
     margin-left: 10px;
 }
 
+#hebergements {
+    padding-top: 0.5rem;
+}
+
 #popular {
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -211,10 +211,10 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin-top: -5px;
+    margin-bottom: 5px;
     font-family: 'Raleway';
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .card {
@@ -257,7 +257,7 @@ input {
     padding: 10px;
 }
 
-.type1 .card_info h4 {
+.type1 .card_info h6 {
     font-size: 16px;
 }
 
@@ -265,8 +265,9 @@ input {
     font-size: 13px;
 }
 
-.card_rating i {
-    font-size: 12px;
+.card_rating {
+    display: inline-flex;
+    font-size: 15px;
     color: #0065FC
 }
 
@@ -322,7 +323,7 @@ input {
     font-size: 14px
 }
 
-.type2 .card_info h4 {
+.type2 .card_info h6 {
     font-size: 16px;
     margin-bottom: -1vh;
     margin-top: 2vh;
@@ -370,15 +371,19 @@ input {
         border-bottom: none;
         margin-right: 5vw;
         align-items: center;
+        max-height: fit-content;
     }
 
-    .onglets a:hover{
-        border-top: 2px #0065FC solid;
+    .onglets {
+        border-top: 2px transparent;
+    }
+
+    .onglets a:hover {
         border-bottom: none;
+        border-top: 2px #0065FC solid;
     }
 
     .top {
-        height: 100px;
         align-items: center;
     }
 
@@ -400,8 +405,10 @@ input {
         display: none;
     }
 
-    .search_button b {
+    .search_button p {
         display: block;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .filters_block {
@@ -512,12 +519,16 @@ input {
         height: fit-content;
     }
 
+    .type1 h6 {
+        padding: 0;
+        margin: 0;
+    }
+
     .type1 .card_info {
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 
     .type1 .card_rating {
@@ -527,11 +538,6 @@ input {
     .type1 .card_img {
         height: 100%;
         width: -webkit-fill-available;
-    }
-
-    .type1 h4 {
-        padding: 0;
-        margin: 0;
     }
 
     .type1 .card_img img {
@@ -663,7 +669,6 @@ input {
 }
 
 @media screen and (min-width:769px) {
-
     #hebergements .content {
         display: flex;
         flex-wrap: wrap;
@@ -706,7 +711,7 @@ input {
 
     .type3 {
         height: -webkit-fill-available;
-        font-size:15px;
+        font-size: 15px;
     }
 
     #port {
