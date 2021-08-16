@@ -72,7 +72,6 @@ a {
     align-items: center;
     border: #f2f2f2 1px solid;
     border-radius: 10px;
-    width: auto;
 }
 
 input {
@@ -91,20 +90,25 @@ input {
 }
 
 .localisation {
-    background-color: #F2F2F2;
+    background-color: #F6F6F6;
     border-bottom-left-radius: 9px;
     border-top-left-radius: 9px;
-    padding: 22px;
+    justify-content: center;
+    display: flex;
+    width: 2.5em;
+    height: 2.8em;
+    align-items: center;
 }
 
 .localisation:hover {
-    box-shadow: #D9D9D9 5px 5px 5px;
+    box-shadow: #D9D9D9; 
     transition: 0.3s;
 }
 
 .search_button {
     background-color: #0065FC;
     border-radius: 9px;
+    padding: 15px;
 }
 
 .search_button:hover {
@@ -114,9 +118,13 @@ input {
 
 .search_button i {
     color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 1.3em;
 }
 
-.search_button p {
+.search_button span {
     color: white;
     display: none;
 }
@@ -215,6 +223,7 @@ input {
     margin-bottom: 5px;
     font-family: 'Raleway';
     padding: 0.5rem;
+    font-weight: bold;
 }
 
 .card {
@@ -231,7 +240,7 @@ input {
 }
 
 .type1 .card_img {
-    height: 20vh;
+    height: 100%;
     width: 40%;
     overflow: hidden;
     object-fit: contain;
@@ -244,8 +253,10 @@ input {
     border-bottom-left-radius: 25px;
     vertical-align: middle;
     width: 150%;
+    height: 100%;
     object-fit: cover;
     position: relative;
+    padding: 5px;
 }
 
 
@@ -371,11 +382,7 @@ input {
         border-bottom: none;
         margin-right: 5vw;
         align-items: center;
-        max-height: fit-content;
-    }
-
-    .onglets {
-        border-top: 2px transparent;
+        border-top: 2px transparent solid;
     }
 
     .onglets a:hover {
@@ -405,10 +412,10 @@ input {
         display: none;
     }
 
-    .search_button p {
+    .search_button span{
         display: block;
-        padding-left: 10px;
-        padding-right: 10px;
+        height: 1.3rem;
+        font-family: 'Raleway';
     }
 
     .filters_block {
@@ -536,15 +543,11 @@ input {
     }
 
     .type1 .card_img {
-        height: 100%;
-        width: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
 
     .type1 .card_img img {
         width: 175%;
-        height: auto;
-        bottom: 0px;
-        right: 30px;
     }
 
     #img1 {
@@ -611,21 +614,16 @@ input {
         bottom: 10px;
     }
 
-    #parc {
+/*     #parc {
         grid-area: el13;
-        height: 410px;
     }
 
     #parc .card_img {
-        height: 370px;
     }
 
     #parc .card_img img {
-        width: 400%;
-        height: auto;
-        bottom: 40px;
-        right: 200px;
-    }
+
+    } */
 
     #nd {
         grid-area: el14;
