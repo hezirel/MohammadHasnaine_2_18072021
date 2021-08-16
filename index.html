@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Reservia</title>
-  <meta name="description" content="">
+  <meta name="description" content="Reservia Site de recherches d'hébergements et d'activitées">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/2f777012c0.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +14,26 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-  <body>
     <header>
       <nav>
         <section class="top">
           <img id="main_logo" src="img/logo/Reservia.svg" alt="logo">
           <span class="sign_up">
-            <a href="#" class="link">S'inscrire</a>
+            <a href="#" class="link"><h2>S'inscrire</h2></a>
           </span>
-          <section class="onglets">
-            <a href="#hebergements" class="link onglet">Hébergements</a>
-            <a href="#activites" class="link onglet">Activités</a>
-          </section>
+          <span class="onglets">
+            <a href="#hebergements" class="link onglet"><h2>Hébergements</h2></a>
+            <a href="#activites" class="link onglet"><h2>Activités</h2></a>
+          </span>
         </section>
       </nav>
       <article class="intro">
         <section class="title">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
           <aside>En plein centre ville ou en pleine nature</aside>
         </section>
         <section class="searchbar">
@@ -107,7 +105,7 @@
       </article>
     </header>
     <main>
-      <span class="block1">
+      <div class="block1">
         <section id="popular" class="col">
           <span class="label">
             <h4>Les plus populaires</h4>
@@ -181,8 +179,9 @@
           <footer class="popular_footer"></footer>
         </section>
         <section id="hebergements" class="col">
-          <section class="label">
-          <h4>Hebergements à Marseille</h4></section>
+          <span class="label">
+            <h4>Hebergements à Marseille</h4>
+          </span>
           <div class="content">
             <a href="">
               <div id="card4" class="card type2 ">
@@ -191,8 +190,8 @@
                     alt="Hébergement_4">
                 </section>
                 <article class="card_info">
-                    <h5>Auberge la Cannebière</h5>
-                    <p>Nuit à partir de 25€</p>
+                  <h5>Auberge la Cannebière</h5>
+                  <p>Nuit à partir de 25€</p>
                   <span class="card_rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -323,11 +322,11 @@
             </a>
           </div>
         </section>
-      </span>
+      </div>
       <section id="activites">
-        <header class="activites_header">
+        <span class="label">
           <h3>Activités à Marseille</h3>
-        </header>
+        </span>
         <div class="content">
           <a href="">
             <div id="port" class="card type3">
@@ -446,7 +445,6 @@
         </div>
       </div>
     </footer>
-  </body>
 </body>
 
 </html>

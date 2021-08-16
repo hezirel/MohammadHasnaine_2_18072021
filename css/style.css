@@ -30,18 +30,24 @@ a {
     justify-content: space-evenly;
     justify-self: center;
     width: 100vw;
-    padding-top: 15px;
+    padding-top: 1vh;
+    margin-bottom: 0.5rem;
 }
 
 .onglet {
     width: 100%;
     justify-content: center;
     border-bottom: lightgray 1px solid;
-    padding-bottom: 15px;
     text-align: center;
 }
 
-.onglet:hover {
+.onglet h2{
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.onglets a:hover {
+    text-decoration: none;
     color: #0065FC;
     border-bottom: #0065FC 3px solid;
 }
@@ -206,6 +212,7 @@ input {
     justify-content: space-between;
     align-items: center;
     margin-top: -15px;
+    margin-bottom: -15px;
     font-family: 'Raleway';
     padding: 10px;
 }
@@ -351,24 +358,23 @@ input {
         order: 1;
         padding-top: 0;
         width: fit-content;
+        margin-bottom: 0;
+    }
+
+    .onglets .onglet {
+        width: fit-content;
+        border-bottom: none;
+        margin-right: 5vw;
+        align-items: center;
+    }
+
+    .onglets a:hover{
+        border-top: 2px #0065FC solid;
+        border-bottom: none;
     }
 
     .top {
         height: 100px;
-        align-items: center;
-    }
-
-    .onglet:hover {
-        border-top: 2px #0065FC solid;
-    }
-
-
-    .onglets .onglet {
-        width: fit-content;
-        padding-bottom: 0;
-        border-bottom: none;
-        margin-right: 70px;
-        height: 100%;
         align-items: center;
     }
 
@@ -498,7 +504,7 @@ input {
     #popular .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 5px;
         height: auto;
     }
