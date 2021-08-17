@@ -382,11 +382,40 @@ input {
 
     #hebergements .card {
         width: 100%;
-        height: fit-content;
+        height: 13em;
+        padding-bottom:0;
     }
 
     #hebergements .card_img {
-        height: 7rem;
+        height: 75%;
+    }
+
+    #hebergements .card_info {
+        padding: 5px;
+        position:relative;
+        height:3em;
+        padding-bottom: none;
+    }
+
+
+
+    #hebergements .card_info h4 {
+        position:absolute;
+        top:10px;
+        margin:0;
+    }
+
+    #hebergements .card_info p {
+        position:absolute;
+        top:50%;
+        margin:0;
+    }
+
+    #hebergements .card_info .card_rating {
+        position:absolute;
+       top:30%;
+        right:15px;
+        margin:0;
     }
 
     #hebergement_footer p {
@@ -476,9 +505,37 @@ input {
         gap: 20px;
     }
 
-    #popular .type1 {
-        flex:1 1 40em;
-      height:fit-content;
+    #popular .content > * {
+        flex:1 1 15em;
+        height:fit-content;
+    }
+
+    .type1 {
+        margin-bottom:0;
+        height:8em;
+    }
+    
+    .type1 .card_info p {
+        top:50%;
+    }
+/* 
+    .type1 .card_info {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } */
+
+    .type1 .card_img {
+        overflow: hidden;
+    }
+
+    .type1 .card_img img {
+        width: 175%;
+    }
+
+    #img1 {
+        width: 200%;
     }
 
     .block1 #hebergements {
@@ -529,12 +586,6 @@ input {
 
     #img8 {
         bottom: 30px;
-    }
-
-    .type2 .card_info {
-        padding: 5px;
-        margin-top: -10px;
-        padding-bottom: none;
     }
 
     .footer {
@@ -657,6 +708,13 @@ input {
 }
 
 @media screen and (min-width:769px) {
+
+    .block1 {
+        display: flex;
+    }
+    #hebergements {
+        order: 1;
+    }
     #hebergements .content {
         display: flex;
         flex-wrap: wrap;
@@ -680,12 +738,15 @@ input {
         padding-left: 20px;
     }
 
+    #popular {
+        order: 2;
+        margin: 1rem;
+    }
 
     #popular .content {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 20px;
-        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     #popular .card .type1 {
