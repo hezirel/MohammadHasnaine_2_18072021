@@ -234,18 +234,18 @@ input {
 }
 
 .type1 {
-    flex:1 1 100%;
+    flex: 1 1 100%;
     display: flex;
     background-color: white;
     border-radius: 25px;
-    padding:5px;
+    padding: 5px;
 }
 
 .type1 .card_img {
-    width:100px;
+    width: 100px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .type1 .card_img img {
@@ -259,27 +259,28 @@ input {
 .type1 .card_info {
     width: 100%;
     padding: 10px;
-    position:relative;
+    position: relative;
 }
 
 .type1 .card_info h6 {
     font-size: 16px;
-    margin:0;
-    position:absolute;
-    top:10px;
+    margin: 0;
+    position: absolute;
+    top: 10px;
 }
 
-.type1 .card_info p {   
+.type1 .card_info p {
     font-size: 13px;
-    margin:0;
-    position:absolute;
-    top:40%;
+    margin: 0;
+    position: absolute;
+    top: 40%;
 }
 
 .type1 .card_rating {
-    position:absolute;
-    bottom:10px;
+    position: absolute;
+    bottom: 10px;
 }
+
 .card_rating {
     display: inline-flex;
     font-size: 15px;
@@ -383,7 +384,7 @@ input {
     #hebergements .card {
         width: 100%;
         height: 13em;
-        padding-bottom:0;
+        padding-bottom: 0;
     }
 
     #hebergements .card_img {
@@ -392,30 +393,30 @@ input {
 
     #hebergements .card_info {
         padding: 5px;
-        position:relative;
-        height:3em;
+        position: relative;
+        height: 3em;
         padding-bottom: none;
     }
 
 
 
     #hebergements .card_info h4 {
-        position:absolute;
-        top:10px;
-        margin:0;
+        position: absolute;
+        top: 10px;
+        margin: 0;
     }
 
     #hebergements .card_info p {
-        position:absolute;
-        top:50%;
-        margin:0;
+        position: absolute;
+        top: 50%;
+        margin: 0;
     }
 
     #hebergements .card_info .card_rating {
-        position:absolute;
-       top:30%;
-        right:15px;
-        margin:0;
+        position: absolute;
+        top: 30%;
+        right: 15px;
+        margin: 0;
     }
 
     #hebergement_footer p {
@@ -497,28 +498,29 @@ input {
         padding: 15px;
     }
 
-    .block1 #popular .content{
+    .block1 #popular .content {
         height: fit-content;
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         border-radius: 25px;
         gap: 20px;
     }
 
-    #popular .content > * {
-        flex:1 1 15em;
-        height:fit-content;
+    #popular .content>* {
+        flex: 1 1 15em;
+        height: fit-content;
     }
 
     .type1 {
-        margin-bottom:0;
-        height:8em;
+        margin-bottom: 0;
+        height: 8em;
     }
-    
+
     .type1 .card_info p {
-        top:50%;
+        top: 50%;
     }
-/* 
+
+    /* 
     .type1 .card_info {
         height: auto;
         display: flex;
@@ -543,7 +545,7 @@ input {
         background-color: #F2F2F2;
         border-radius: 25px;
         height: 100%;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     #hebergements .content {
@@ -711,10 +713,13 @@ input {
 
     .block1 {
         display: flex;
+        
     }
+
     #hebergements {
         order: 1;
     }
+
     #hebergements .content {
         display: flex;
         flex-wrap: wrap;
@@ -743,18 +748,28 @@ input {
         margin: 1rem;
     }
 
+    /*     #popular .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+*/
     #popular .content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #popular .content > * {
+        height: fit-content;
     }
 
     #popular .card .type1 {
-        max-height: 1rem;
+        max-height: auto;
     }
 
     .type3 {
-        height: -webkit-fill-available;
         font-size: 15px;
     }
 
